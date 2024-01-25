@@ -9,7 +9,8 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check . && eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "bun test"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -36,6 +37,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@types/bun": "^1.0.4",
     "@vercel/analytics": "^1.1.1",
     "fast-xml-parser": "^4.3.2"
   }

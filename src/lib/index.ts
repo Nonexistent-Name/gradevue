@@ -8,7 +8,7 @@ export function getColorForGrade(grade: string | number) {
 
 	if (grade.match(/^A\+?-?$/)) return 'green';
 	else if (grade.match(/^B\+?-?$/)) return 'yellow';
-	else if (grade.match(/^[CDEF]\+?-?$/)) return 'red';
+	else if (grade.match(/^[CDF]\+?-?$/)) return 'red';
 	return 'gray';
 }
 
